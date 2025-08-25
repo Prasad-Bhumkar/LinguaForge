@@ -12,6 +12,12 @@ const PrivacyPolicy = () => {
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
             We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
           </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            We do not share your personal information with third parties without your consent, except as required by law. We take reasonable steps to protect your information from loss, theft, and misuse.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            If you have any questions about our privacy policy or how we handle your personal information, please contact us at <a href="mailto:support@linguaforge.com" className="text-violet-600 hover:underline">support@linguaforge.com</a>.
+          </p>
         </div>
       </div>
     </div>

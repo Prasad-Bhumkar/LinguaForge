@@ -12,6 +12,12 @@ const Support = () => {
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
             If you can't find what you're looking for, you can contact our support team at <a href="mailto:support@linguaforge.com" className="text-violet-600 hover:underline">support@linguaforge.com</a>.
           </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            We are committed to providing timely and effective support to ensure you have the best experience with our application.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Thank you for choosing LinguaForge, and we look forward to assisting you!
+          </p>
         </div>
       </div>
     </div>

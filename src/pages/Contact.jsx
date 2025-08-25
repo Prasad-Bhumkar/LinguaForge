@@ -12,6 +12,12 @@ const Contact = () => {
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
             You can contact us by email at <a href="mailto:support@linguaforge.com" className="text-violet-600 hover:underline">support@linguaforge.com</a>.
           </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            For any inquiries, please fill out our contact form on our website, and our support team will get back to you as soon as possible.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            We value your feedback and are always looking for ways to improve our services. Thank you for reaching out!
+          </p>
         </div>
       </div>
     </div>
