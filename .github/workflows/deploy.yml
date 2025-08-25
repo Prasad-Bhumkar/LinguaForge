@@ -24,12 +24,13 @@ jobs:
       run: npm ci
       
     - name: Build project
-      run: npm run build
+      run: npm run build:client
+      
+    - name: Install Netlify CLI
+      run: npm install -g netlify-cli
       
     - name: Deploy to Netlify
-      uses: netlify/actions/cli@v2
-      with:
-        args: deploy --prod --dir=dist/spa --functions=netlify/functions
+      run: netlify deploy --prod --dir=dist/spa --functions=netlify/functions
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
