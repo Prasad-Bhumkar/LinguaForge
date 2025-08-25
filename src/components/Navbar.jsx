@@ -9,6 +9,9 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/translate', label: 'Translator' },
     { path: '/random', label: 'Random Generator' },
+    { path: '/about', label: 'About' },
+    { path: '/contact', label: 'Contact' },
+    { path: '/support', label: 'Support' },
   ];
 
   const isActive = (path) => location.pathname === path;

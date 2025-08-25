@@ -6,11 +6,11 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import FloatingActions from "./components/FloatingActions.jsx";
 import { TranslationSkeleton } from "./components/Skeleton.jsx";
-import { Home, Translate, Random, NotFound } from "./utils/lazyImports.js";
+import { Home, Translate, Random, NotFound, About, Contact, Support, TermsOfService, PrivacyPolicy } from "./utils/lazyImports.js";
 
 const App = () => (
   <ToastProvider>
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Navbar />
         <main className="flex-1">
@@ -34,6 +34,11 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/translate" element={<Translate />} />
               <Route path="/random" element={<Random />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/support" element={<Support />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

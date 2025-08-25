@@ -9,7 +9,7 @@ const FloatingActions = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/your-handle',
+      url: 'https://github.com/Prasad-Bhumkar',
       bgColor: 'bg-gray-900',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -19,7 +19,7 @@ const FloatingActions = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/your-handle',
+      url: 'https://www.instagram.com/prasad.bhumkar_official/',
       bgColor: 'bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500',
       fallbackBg: 'bg-pink-600',
       icon: (
@@ -30,7 +30,7 @@ const FloatingActions = () => {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/your-handle',
+      url: 'https://x.com/bhumkar_pr89871',
       bgColor: 'bg-black',
       icon: (
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ const FloatingActions = () => {
     },
     {
       name: 'WhatsApp',
-      url: 'https://wa.me/your-number',
+      url: 'https://wa.me/7410170125',
       bgColor: 'bg-green-500',
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

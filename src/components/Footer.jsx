@@ -11,14 +11,14 @@ const Footer = () => {
       { name: 'Features', path: '/' },
     ],
     company: [
-      { name: 'About', href: '#about' },
-      { name: 'Privacy Policy', href: '#privacy' },
-      { name: 'Terms of Service', href: '#terms' },
+      { name: 'About', path: '/about' },
+      { name: 'Privacy Policy', path: '/privacy-policy' },
+      { name: 'Terms of Service', path: '/terms-of-service' },
     ],
     resources: [
       { name: 'API Documentation', href: 'https://rapidapi.com/gatzuma/api/deep-translate1' },
-      { name: 'Support', href: '#support' },
-      { name: 'Contact', href: '#contact' },
+      { name: 'Support', path: '/support' },
+      { name: 'Contact', path: '/contact' },
     ],
     social: [
       { name: 'GitHub', href: 'https://github.com/your-handle', icon: 'github' },
@@ -104,12 +104,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.path}
                     className="text-gray-600 hover:text-violet-600 transition-colors duration-200 text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -121,14 +121,23 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    target={link.href.startsWith('http') ? '_blank' : '_self'}
-                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="text-gray-600 hover:text-violet-600 transition-colors duration-200 text-sm"
-                  >
-                    {link.name}
-                  </a>
+                  {link.href ? (
+                    <a
+                      href={link.href}
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className="text-gray-600 hover:text-violet-600 transition-colors duration-200 text-sm"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.path}
+                      className="text-gray-600 hover:text-violet-600 transition-colors duration-200 text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

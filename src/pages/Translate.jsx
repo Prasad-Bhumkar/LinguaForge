@@ -31,8 +31,8 @@ const Translate = () => {
       return;
     }
 
-    if (!process.env.REACT_APP_RAPIDAPI_KEY) {
-      setError('RapidAPI key not found. Please add REACT_APP_RAPIDAPI_KEY to your .env file.');
+    if (!import.meta.env.VITE_RAPIDAPI_KEY) {
+      setError('RapidAPI key not found. Please add VITE_RAPIDAPI_KEY to your .env file.');
       return;
     }
 
@@ -110,7 +110,7 @@ const Translate = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Input Section */}
               <div className="space-y-4">
-                <label className="block text-sm font-semibold text-slate-700 flex items-center">
+                <label className="text-sm font-semibold text-slate-700 flex items-center">
                   <svg className="w-4 h-4 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2h-5m-1.414-1.414a2 2 0 00-2.828 0l-2 2a2 2 0 00-.586 1.414V6h5V4.586a2 2 0 00-.586-1.414l-2-2z" />
                   </svg>
@@ -132,7 +132,7 @@ const Translate = () => {
 
               {/* Output Section */}
               <div className="space-y-4">
-                <label className="block text-sm font-semibold text-slate-700 flex items-center">
+                <label className="text-sm font-semibold text-slate-700 flex items-center">
                   <svg className="w-4 h-4 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
@@ -268,7 +268,7 @@ const Translate = () => {
                     }`}>{error}</p>
                     {error.includes('API key') && (
                       <p className="text-xs text-red-600 mt-2">
-                        Add your RapidAPI key to the .env file as REACT_APP_RAPIDAPI_KEY
+                        Add your RapidAPI key to the .env file as VITE_RAPIDAPI_KEY
                       </p>
                     )}
                     {error.includes('monthly translation limit') && (
@@ -293,7 +293,7 @@ const Translate = () => {
           </div>
 
           {/* API Setup Instructions */}
-          <div className="bg-white/60 backdrop-blur-sm border border-emerald-200 rounded-3xl p-8 shadow-xl">
+          {/* <div className="bg-white/60 backdrop-blur-sm border border-emerald-200 rounded-3xl p-8 shadow-xl">
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center">
@@ -309,7 +309,7 @@ const Translate = () => {
                   <li>Create a free RapidAPI account</li>
                   <li>Subscribe to Deep Translate (free tier: 200K chars/month)</li>
                   <li>Copy your API key from the dashboard</li>
-                  <li>Add <code className="bg-slate-100 px-2 py-1 rounded text-xs font-mono">REACT_APP_RAPIDAPI_KEY=your_key</code> to .env</li>
+                  <li>Add <code className="bg-slate-100 px-2 py-1 rounded text-xs font-mono">VITE_RAPIDAPI_KEY=your_key</code> to .env</li>
                   <li>Restart your development server</li>
                 </ol>
                 <div className="mt-4 p-3 bg-emerald-50 rounded-xl border border-emerald-100">
@@ -319,7 +319,7 @@ const Translate = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

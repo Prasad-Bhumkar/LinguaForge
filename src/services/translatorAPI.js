@@ -6,7 +6,7 @@ export async function translateText(text, targetLang) {
     headers: {
       'Content-Type': 'application/json',
       'x-rapidapi-host': 'deep-translate1.p.rapidapi.com',
-      'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY
+      'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY
     },
     body: JSON.stringify({
       q: text,
