@@ -1,0 +1,79 @@
+
+## 🛠 Custom Instructions for Visual Copilot
+
+**Project Name:** Slab 1 React + Tailwind App (JavaScript Only)  
+
+**Tech Stack & Rules:**
+- **React** (JavaScript only — **no TypeScript**)
+- **Tailwind CSS** for styling
+- **react-router-dom** for routing
+- **RapidAPI** for translation API calls
+- Responsive, mobile‑friendly design
+- Keep code modular and clean
+
+---
+
+### 📂 Folder Structure
+```
+src/
+  components/       # Reusable UI parts (Navbar, Loader, ErrorMessage)
+  pages/            # Page-level components (Home, Translator, RandomString)
+  services/         # API logic (translatorAPI.js)
+  assets/           # Images/icons
+  styles/           # Tailwind index.css
+  App.jsx           # Main app with routes
+  index.js          # Entry point
+.env                # API keys
+```
+
+---
+
+### 📄 Feature Requirements
+
+#### 1. **Translator Page** (`/translate`)
+- Textarea for English input
+- Dropdown to select target language
+- Button to translate
+- Show loading spinner while fetching
+- Show translated text in a styled output box
+- Handle and display API errors
+- API key stored in `.env` and accessed via `process.env`
+
+#### 2. **Random String Generator Page** (`/random`)
+- Button to generate a random alphanumeric string (length 12)
+- Use:
+  - `useState` for storing the string
+  - `useCallback` for memoizing the generator
+  - `useEffect` to auto-generate on first render
+- Display string in a styled card
+
+#### 3. **Home Page** (`/`)
+- Welcome text
+- Links/buttons to Translator and Random String pages
+
+---
+
+### 🔄 Routing
+- Use `react-router-dom` with:
+  - `/` → Home
+  - `/translate` → Translator
+  - `/random` → Random String Generator
+- Navbar with links to all pages
+- Active link highlighting
+
+---
+
+### 🎨 UI Guidelines
+- Minimal, clean, and responsive
+- Tailwind utility classes for spacing, colors, and typography
+- Mobile-first layout
+- Consistent button styles and headings
+
+---
+
+### ⚡ Development Notes
+- No TypeScript files — all `.jsx` or `.js`
+- Keep API logic separate in `services/translatorAPI.js`
+- Use environment variables for API keys
+- Avoid inline styles — use Tailwind classes
+- Components should be reusable where possible

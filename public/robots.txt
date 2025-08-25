@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://linguaforge.app/sitemap.xml
+
+# Crawling rules
+Crawl-delay: 1
