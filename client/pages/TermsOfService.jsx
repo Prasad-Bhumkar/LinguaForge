@@ -1,6 +1,7 @@
-import React from 'react';
 
 const TermsOfService = () => {
+  return (
+    const TermsOfService = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Animated Background */}
@@ -10,20 +11,15 @@ const TermsOfService = () => {
         <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-gradient-to-r from-stone-300 to-gray-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold text-center text-gray-900 mb-8">Terms of Service</h1>
-          <div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-lg p-8">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Please read these terms of service carefully before using LinguaForge.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
-            </p>
-          </div>
-        </div>
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
+        <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
+        <p className="text-lg text-gray-600 mb-8">
+          These are our terms of service.
+        </p>
       </div>
     </div>
+  );
+};
   );
 };
 

@@ -138,16 +138,16 @@ const FloatingActions = () => {
         aria-label={isOpen ? 'Close social links' : 'Open social links'}
         aria-expanded={isOpen}
         className={`
-          w-14 h-14 rounded-full bg-indigo-600 text-white shadow-lg 
-          transition-all duration-200 ease-out
-          hover:scale-105 hover:bg-indigo-700 
+          w-14 h-14 rounded-full bg-yellow-400 text-white shadow-lg 
+          transition-all duration-1000 ease-out
+          hover:scale-105 hover:bg-green-700 
           focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2
-          ${!isOpen ? 'animate-pulse motion-reduce:animate-none' : ''}
+          ${!isOpen ? 'animate-pulse motion-reduce:animate-spin' : ''}
         `}
       >
         <span className="flex items-center justify-center w-full h-full">
           <svg
-            className={`w-7 h-7 transition-transform duration-200 ease-out ${isOpen ? 'rotate-12' : 'rotate-0'} motion-reduce:transition-none`}
+            className={`w-17 h-17 transition-transform duration-200 ease-out ${isOpen ? 'rotate-12' : 'rotate-0'} motion-reduce:transition-none`}
             fill="currentColor"
             viewBox="0 0 24 24"
           >
