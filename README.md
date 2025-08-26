@@ -30,7 +30,7 @@ A modern web application that combines AI-powered text translation with secure s
 
 ## 🚀 Demo
 
-Check out the live demo: [LinguaForge Live](https://your-netlify-app.netlify.app)
+Check out the live demo: [LinguaForge Live](https://linguaforge.netlify.app/)
 
 ### Screenshots
 *(Add your screenshots here)*
